@@ -1,0 +1,376 @@
+/*requires: <link rel="stylesheet" href="/next/scripts/lib/bootstrap-4.5.2/css/bootstrap.min.css">*/
+
+/* Auth0 Lock UI Customizations */
+#auth0-lock-container .auth0-lock.auth0-lock {
+    font-family: tahoma,helvetica,arial,verdana,sans-serif !important;
+}
+
+    #auth0-lock-container .auth0-lock.auth0-lock .auth0-lock-cred-pane-internal-wrapper {
+        height: inherit !important;
+    }
+
+    #auth0-lock-container .auth0-lock.auth0-lock .auth0-lock-content-wrapper {
+        overflow: hidden !important;
+    }
+
+        #auth0-lock-container .auth0-lock.auth0-lock .auth0-lock-content-wrapper .auth0-lock-view-content {
+            padding-top: 0.5rem;
+        }
+
+    #auth0-lock-container .auth0-lock.auth0-lock .auth0-lock-header {
+        display: none !important;
+    }
+
+    /* Message banners */
+    #auth0-lock-container .auth0-lock.auth0-lock .auth0-global-message.auth0-global-message-error {
+        color: #E06666 !important;
+        background-color: #ffffff !important;
+        border: 1px solid #E06666 !important;
+        text-align: left !important;
+    }
+
+    #auth0-lock-container .auth0-lock.auth0-lock .auth0-global-message.auth0-global-message-success {
+        color: #7ac143 !important;
+        background-color: #ffffff !important;
+        border: 1px solid #7ac143 !important;
+        text-align: left !important;
+    }
+
+    #auth0-lock-container .auth0-lock.auth0-lock .auth0-lock-input-wrap,
+    #auth0-lock-container .auth0-lock.auth0-lock .auth0-lock-input-wrap .auth0-lock-input {
+        border-radius: 0 !important;
+    }
+
+    #auth0-lock-container .auth0-lock.auth0-lock .auth0-lock-form {
+        padding: 0 !important;
+    }
+
+        #auth0-lock-container .auth0-lock.auth0-lock .auth0-lock-form .auth0-sso-notice-container {
+            padding-top: 10px !important;
+            margin-top: 7px !important;
+            margin-bottom: 10px !important;
+        }
+
+        #auth0-lock-container .auth0-lock.auth0-lock .auth0-lock-form .auth0-lock-input-wrap.auth0-lock-input-wrap-with-icon {
+            padding-left: 0 !important;
+        }
+
+        #auth0-lock-container .auth0-lock.auth0-lock .auth0-lock-form .auth0-lock-input-username .auth0-lock-input-wrap.auth0-lock-input-wrap-with-icon .auth0-lock-icon,
+        #auth0-lock-container .auth0-lock.auth0-lock .auth0-lock-form .auth0-lock-input-password .auth0-lock-input-wrap.auth0-lock-input-wrap-with-icon .auth0-lock-icon {
+            display: none !important;
+        }
+
+        #auth0-lock-container .auth0-lock.auth0-lock .auth0-lock-form .auth0-lock-alternative {
+            display: none !important;
+        }
+
+    #auth0-lock-container .auth0-lock.auth0-lock .auth0-lock-submit {
+        padding: 0 !important;
+        border-radius: 0 !important;
+        transition: none !important;
+        text-transform: capitalize !important;
+        font-size: 13px !important;
+        font-weight: 600 !important;
+    }
+
+        #auth0-lock-container .auth0-lock.auth0-lock .auth0-lock-submit:hover:not([disabled]) span {
+            transform: none !important;
+        }
+
+        #auth0-lock-container .auth0-lock.auth0-lock .auth0-lock-submit svg {
+            display: none !important;
+        }
+
+        #auth0-lock-container .auth0-lock.auth0-lock .auth0-lock-submit span {
+            transition: none !important;
+        }
+
+/* Auth0 MFA UI Customizations */
+#auth0-mfa-container .auth0-lock.auth0-lock {
+    font-family: tahoma,helvetica,arial,verdana,sans-serif !important;
+}
+
+    #auth0-mfa-container .auth0-lock.auth0-lock .auth0-lock-header {
+        display: none !important;
+    }
+
+    #auth0-mfa-container .auth0-lock.auth0-lock .auth0-lock-content {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+
+    #auth0-mfa-container .auth0-lock.auth0-lock .auth0-lock-input-wrap,
+    #auth0-mfa-container .auth0-lock.auth0-lock .auth0-lock-input-wrap .auth0-lock-input {
+        border-radius: 0 !important;
+    }
+
+    /* Message banners */
+    #auth0-mfa-container .auth0-lock.auth0-lock .auth0-global-message.auth0-global-message-error {
+        color: #E06666 !important;
+        background-color: #ffffff !important;
+        border: 1px solid #E06666 !important;
+    }
+
+    #auth0-mfa-container .auth0-lock.auth0-lock .auth0-global-message.auth0-global-message-success {
+        color: #7ac143 !important;
+        background-color: #ffffff !important;
+        border: 1px solid #7ac143 !important;
+    }
+
+    #auth0-mfa-container .auth0-lock.auth0-lock .auth0-mfa-recovery-code .auth0-mfa-code {
+        border: 1px solid #f1f1f1 !important;
+    }
+
+    /* Submit button style */
+    #auth0-mfa-container .auth0-lock.auth0-lock .auth0-lock-submit {
+        max-height: 42px;
+        color: white;
+        background-color: #0076c0 !important;
+    }
+
+        #auth0-mfa-container .auth0-lock.auth0-lock .auth0-lock-submit:hover {
+            background-color: #0069B3 !important;
+        }
+
+        #auth0-mfa-container .auth0-lock.auth0-lock .auth0-lock-submit:active {
+            background-color: #005DA7 !important;
+        }
+
+    #auth0-mfa-container .auth0-lock.auth0-lock .auth0-loading-container .auth0-loading {
+        top: 0 !important;
+        height: 20px !important;
+        width: 20px !important;
+        border-color: rgba(255,255,255,0.4) rgba(255,255,255,0.4) rgba(255,255,255,0.2) rgba(255,255,255,0.2) !important;
+    }
+
+    #auth0-mfa-container .auth0-lock.auth0-lock .auth0-mfa-footer, .auth0-lock.auth0-lock .auth0-lock-alternative.auth0-mfa-footer {
+        background-color: inherit !important;
+        margin: inherit !important;
+    }
+
+    #auth0-mfa-container .auth0-lock.auth0-lock .auth0-lock-submit {
+        padding: 0 !important;
+        border-radius: 0 !important;
+        transition: none !important;
+        text-transform: capitalize !important;
+        font-size: 13px !important;
+        font-weight: 600 !important;
+    }
+
+        #auth0-mfa-container .auth0-lock.auth0-lock .auth0-lock-submit svg {
+            display: none !important;
+        }
+
+        #auth0-mfa-container .auth0-lock.auth0-lock .auth0-lock-submit span {
+            transition: none !important;
+        }
+
+            #auth0-mfa-container .auth0-lock.auth0-lock .auth0-lock-submit span::after {
+                content: 'Submit';
+            }
+
+        #auth0-mfa-container .auth0-lock.auth0-lock .auth0-lock-submit:hover:not([disabled]) span {
+            -webkit-transform: none;
+            transform: none;
+        }
+
+/* MFA Enrollment Confirmatiuon */
+#auth0-mfa-container .auth0-mfa-confirmation a.auth0-lock-link {
+    /* d-block */
+    display: block !important;
+    /* btn */
+    display: inline-block;
+    font-weight: 600;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 13px;
+    line-height: 28px;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    /* btn-primary */
+    color: #fff;
+    background-color: #0076c0;
+    border-color: #0076c0;
+    /* rounded-0 */
+    border-radius: 0 !important;
+    /* text-decoration-none */
+    text-decoration: none !important;
+}
+
+/* eVestment Layout */
+html, body {
+    font-family: Tahoma;
+    height: 100%;
+}
+
+.row, .col {
+    height: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.bg-primary {
+    background-color: #0076c0 !important;
+}
+
+.btn-primary {
+    background-color: #0076c0 !important;
+    border-color: #0076c0 !important;
+}
+
+#left-col table {
+    height: 100%;
+    width: 100%;
+}
+
+#left-col .content {
+    width: 300px;
+}
+
+    #left-col .content .logo {
+        height: 50px;
+    }
+
+    #left-col .content #auth0-lock-container {
+        min-height: 156px;
+    }
+
+.auth0-client-native-powerlink #left-col .content .actions,
+.auth0-client-native-powerlink #left-col .content .still-need-help,
+.auth0-client-native-powerlink #left-col .content .disclaimer {
+    display: none !important;
+}
+
+.auth0-client-native-salesforce #left-col .content .actions {
+    display: none !important;
+}
+
+    #left-col .content .actions .btn {
+        color: #0076c0;
+        border-color: #0076c0;
+        font-size: 13px !important;
+        font-weight: 600 !important;
+        height: 42px !important;
+        line-height: 29px !important;
+    }
+
+        #left-col .content .actions .btn:hover {
+            background-color: #F2F8FC;
+        }
+
+        #left-col .content .actions .btn:active {
+            background-color: #EBF1F5;
+        }
+
+    .partner-mi #left-col .content .actions .btn {
+        color: #002C77;
+        border-color: #002C77;
+    }
+
+    #left-col .content .links {
+        font-size: 11px;
+    }
+
+        #left-col .content .links a {
+            color: #0076c0;
+            text-decoration: underline;
+        }
+
+    #left-col .content .disclaimer {
+        font-size: 9px;
+    }
+
+    #left-col .content .info {
+        font-size: 13px;
+    }
+
+/* Hide or show specific branding elements on page */
+
+/* Mercer */
+.partner-mi #left-col .content .logo {
+    height: auto;
+    width: 250px;
+}
+
+.partner-mi #partner-mi-logo {
+    display: initial !important;
+}
+
+.partner-mi .partner-mi-request-account {
+    display: block !important;
+}
+
+.partner-mi #partner-mi-contact-us-link {
+    display: initial !important;
+}
+
+.partner-mi #partner-mi-footer-image {
+    display: block !important;
+    width: 75px;
+    margin-top: 10px;
+}
+
+.partner-mi #partner-mi-disclaimer {
+    display: block !important;
+}
+
+/* Solovis */
+.partner-slv #left-col .content .logo {
+    height: auto;
+    width: 250px;
+}
+
+.partner-slv #partner-slv-logo {
+    display: initial !important;
+}
+
+.partner-slv .partner-slv-request-account {
+    display: block !important;
+}
+
+.partner-slv #partner-slv-contact-us-link {
+    display: initial !important;
+}
+
+.partner-slv #partner-slv-footer-image {
+    display: block !important;
+    width: 75px;
+    margin-top: 10px;
+}
+
+.partner-slv #partner-slv-disclaimer {
+    display: block !important;
+}
+
+.partner-slv #partner-slv-info {
+    display: block !important;
+}
+
+/* eVestment */
+.partner-ev #partner-ev-logo {
+    display: initial !important;
+}
+
+.partner-ev .partner-ev-request-account {
+    display: block !important;
+}
+
+.partner-ev #partner-ev-contact-us-link {
+    display: initial !important;
+}
+
+.partner-ev #partner-ev-disclaimer {
+    display: block !important;
+}
